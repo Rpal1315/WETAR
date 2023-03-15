@@ -4,7 +4,7 @@ code = str(input("Enter the code: "))
 f = open("/media/ritankar/01D7B108A6C349F0/my_work/PythonProjects/WETAR/city_code.json")
 codes = json.load(f)
 base_url = "https://api.openweathermap.org/data/2.5/weather?"
-app_id = "f5d6f8a3c7870e7ba100b6fa34e580d2"
+app_id = "<your api key here>"
 
 res = list(filter(lambda codes: codes['code'] == code, codes))
 if 	len(res) == 0:
